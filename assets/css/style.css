@@ -1,0 +1,153 @@
+:root{
+    --c1:#1A7EF7;
+    --c2:#F7931A;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+header,footer{
+    background-color: rgb(102, 101, 101);
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    font-size: medium;
+}
+header h2{
+    color: var(--c2);
+}
+header h2 a{
+    color: var(--c2);
+    text-decoration: none;
+}
+main{
+    display: flex;   
+    width: 100%;
+    height: 90%;
+    
+}
+section > article{
+   
+    border-radius: 2%;
+    background-color: rgba(212, 212, 212,30%);
+    padding: 1em;
+    align-self: flex-start;
+    
+}
+
+/*Clases del Nav*/
+.Menu{
+    padding: 1em;
+    line-height: 2rem;
+    background-color: rgb(56, 56, 56);
+    flex-grow: 3;
+}
+
+.Menu-lista{
+    list-style: none;
+    
+}
+
+.Menu-lista li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.Menu-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Menu-header > img{
+    display: none;
+    height: 20px;
+    width: 25px;
+}
+/*Contenido de la página */
+.Contenido{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 3em;
+    line-height: 1.2rem;
+    overflow: auto;
+}
+/*Articulo*/
+.Articulo-menu{
+    position: sticky;
+    top: 10px;
+    
+    display: flex;
+    align-self: flex-start;
+    width: auto;
+    border: 5px solid var(--c1);
+    border-radius: 1em;
+    padding: 1em;
+}
+.Articulo-menu ul{
+    list-style: none;
+}
+.Articulo-menu li a{
+    color:#F7931A;
+    
+}
+.Articulo h3{
+    text-decoration: underline ;
+    text-decoration-color:#F7931A ;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        height: auto;
+      background-color: rgb(255, 255, 255);
+    }
+    header, footer{
+        height: 3em;
+    }
+    main{
+        flex-direction: column;
+    }
+    .Articulo-menu{
+        align-self: center;
+    }
+    .Contenido{
+        height: auto;
+        flex-direction: column;
+        font-size: 1.1rem;
+        line-height: 25px;
+        
+    }
+    .Articulo{
+        margin-top: 2em;
+    }
+    
+    .Menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1em;
+        color: wheat;
+    }
+    .Menu-header > h3{
+        display: none;
+    }
+    .Menu-header > img{
+        display: block;
+    }
+    .Menu-lista{
+        display: none;
+    }
+   
+    
+
+  }
