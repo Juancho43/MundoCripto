@@ -1,14 +1,16 @@
-:root{
-    --c1:#1A7EF7;
-    --c2:#F7931A;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,500&family=Roboto+Slab:wght@400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     height: 100vh;
     width: 100vw;
+    
 }
 header,footer{
     background-color: rgb(102, 101, 101);
@@ -22,10 +24,13 @@ footer{
     font-size: medium;
 }
 header h2{
-    color: var(--c2);
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #F7931A;
 }
 header h2 a{
-    color: var(--c2);
+    color: #F7931A;
     text-decoration: none;
 }
 main{
@@ -44,22 +49,56 @@ section > article{
 }
 
 /*Clases del Nav*/
+.Volver{
+    display: none;
+    background-color: #1A7EF7;
+    border-radius: 50%;
+    position: fixed;
+    top: 90%;
+    left: 80%;
+    width: 60px;
+    height: 60px;
+    
+    justify-content: center;
+    align-items: center;
+}
+.Volver a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
 .Menu{
     padding: 1em;
     line-height: 2rem;
     background-color: rgb(56, 56, 56);
     flex-grow: 3;
+    
 }
-
+.Menu-header h3, label{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #F7931A;
+}
 .Menu-lista{
     list-style: none;
     
 }
 
 .Menu-lista li > a{
+    font-family: 'Cabin', sans-serif;
     color: white;
     text-decoration: none;
+    transition: 2s;
+
 }
+.Menu-lista li > a:hover{
+    color: #F7931A;
+    text-decoration: underline;
+    text-decoration-color:#1A7EF7 ;
+    transition: 2s;
+}
+
 
 .Menu-header{
     display: flex;
@@ -73,6 +112,9 @@ section > article{
     height: 20px;
     width: 25px;
 }
+.Menu input#menu{
+    display: none;
+}
 /*Contenido de la página */
 .Contenido{
     display: flex;
@@ -82,28 +124,58 @@ section > article{
     line-height: 1.2rem;
     overflow: auto;
 }
+
 /*Articulo*/
+
 .Articulo-menu{
     position: sticky;
-    top: 10px;
+    top: 1%;
     
     display: flex;
+    flex-direction: column;
+    gap: 5px;
     align-self: flex-start;
     width: auto;
-    border: 5px solid var(--c1);
+    background-color: rgba(26, 126, 247,60%);
     border-radius: 1em;
     padding: 1em;
+}
+.Articulo-menu h3{
+    color:#fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400; 
+}
+.Articulo-header{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.Articulo-header h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #F7931A;
+    text-decoration: underline ;
+    
 }
 .Articulo-menu ul{
     list-style: none;
 }
 .Articulo-menu li a{
-    color:#F7931A;
-    
+    color: #fff;
+    font-size: large;
+    text-decoration: none;
+    margin: 6px;
 }
+
 .Articulo h3{
     text-decoration: underline ;
-    text-decoration-color:#F7931A ;
+    text-decoration-color:#1A7EF7 ;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    margin: 20px;
 }
 
 @media screen and (max-width: 700px) {
@@ -116,38 +188,51 @@ section > article{
     }
     main{
         flex-direction: column;
+        overflow-y: scroll;
+    }
+    .Volver{
+        display: flex;
     }
     .Articulo-menu{
         align-self: center;
+        width: 80%;
+        top: 0;
     }
     .Contenido{
         height: auto;
         flex-direction: column;
         font-size: 1.1rem;
-        line-height: 25px;
         
-    }
-    .Articulo{
-        margin-top: 2em;
+        
     }
     
     .Menu{
         display: flex;
+        flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-        height: 1em;
-        color: wheat;
+        
     }
     .Menu-header > h3{
         display: none;
     }
-    .Menu-header > img{
+    .Menu-header > label{
+        display: inline-block;
+        width: 100vw;
+        text-align: center;
+    }
+    
+   
+    /*Abrir y cerrar el menu*/
+    #menu ~ .Menu-lista {
+        display: none;
+        overflow: hidden;
+    }
+    
+    #menu:checked ~ .Menu-lista{
         display: block;
     }
-    .Menu-lista{
-        display: none;
-    }
-   
+
     
 
   }
