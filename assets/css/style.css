@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,500&family=Roboto+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,500&family=Lato:ital,wght@0,400;1,700&family=Roboto+Slab:wght@400;500&display=swap');
 
 *{
     margin: 0;
@@ -23,13 +23,13 @@ header,footer{
 footer{
     font-size: medium;
 }
-header h2{
+header h1{
     font-family: 'Roboto Slab', serif;
     font-size: 1.4em;
     font-weight: 500;
     color: #F7931A;
 }
-header h2 a{
+header h1 a{
     color: #F7931A;
     text-decoration: none;
 }
@@ -37,7 +37,6 @@ main{
     display: flex;   
     width: 100%;
     height: 90%;
-    
 }
 section > article{
    
@@ -48,73 +47,6 @@ section > article{
     
 }
 
-/*Clases del Nav*/
-.Volver{
-    display: none;
-    background-color: #1A7EF7;
-    border-radius: 50%;
-    position: fixed;
-    top: 90%;
-    left: 80%;
-    width: 60px;
-    height: 60px;
-    
-    justify-content: center;
-    align-items: center;
-}
-.Volver a{
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-}
-.Menu{
-    padding: 1em;
-    line-height: 2rem;
-    background-color: rgb(56, 56, 56);
-    flex-grow: 3;
-    
-}
-.Menu-header h3, label{
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.1em;
-    font-weight: 500;
-    color: #F7931A;
-}
-.Menu-lista{
-    list-style: none;
-    
-}
-
-.Menu-lista li > a{
-    font-family: 'Cabin', sans-serif;
-    color: white;
-    text-decoration: none;
-    transition: 2s;
-
-}
-.Menu-lista li > a:hover{
-    color: #F7931A;
-    text-decoration: underline;
-    text-decoration-color:#1A7EF7 ;
-    transition: 2s;
-}
-
-
-.Menu-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.Menu-header > img{
-    display: none;
-    height: 20px;
-    width: 25px;
-}
-.Menu input#menu{
-    display: none;
-}
 /*Contenido de la página */
 .Contenido{
     display: flex;
@@ -158,8 +90,23 @@ section > article{
     font-weight: 500;
     color: #F7931A;
     text-decoration: underline ;
+    letter-spacing: 1px;
     
 }
+.Articulo div{
+    margin: 1em;
+    
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.Articulo div img{
+    
+    height: 6%;
+    width: 6%;
+    margin: 1em;
+}
+
 .Articulo-menu ul{
     list-style: none;
 }
@@ -168,6 +115,7 @@ section > article{
     font-size: large;
     text-decoration: none;
     margin: 6px;
+    font-family: 'Cabin', sans-serif;
 }
 
 .Articulo h3{
@@ -177,22 +125,27 @@ section > article{
     font-weight: 400;
     margin: 20px;
 }
+.Articulo p{
+    text-indent: 1.3em;
+    line-height: 1.8;
+    font-family: 'Lato', sans-serif;
+}
 
 @media screen and (max-width: 700px) {
     body {
         height: auto;
-      background-color: rgb(255, 255, 255);
+        overflow: auto;
+        overflow-x: hidden;
+      
     }
     header, footer{
         height: 3em;
     }
     main{
         flex-direction: column;
-        overflow-y: scroll;
+        
     }
-    .Volver{
-        display: flex;
-    }
+    
     .Articulo-menu{
         align-self: center;
         width: 80%;
@@ -202,10 +155,20 @@ section > article{
         height: auto;
         flex-direction: column;
         font-size: 1.1rem;
-        
+        overflow-x: hidden;
+        padding: 1em;
+        background-color: #fff;
+    }
+    section > article{
+        background-color: #fff;
+    }
+    .Articulo div img{
+        border: 5px solid #1A7EF7;
+        height: 40%;
+        width: 40%;
+        margin: 1em;
         
     }
-    
     .Menu{
         display: flex;
         flex-flow: column wrap;
@@ -213,26 +176,17 @@ section > article{
         align-items: center;
         
     }
-    .Menu-header > h3{
-        display: none;
-    }
-    .Menu-header > label{
-        display: inline-block;
-        width: 100vw;
-        text-align: center;
-    }
-    
    
     /*Abrir y cerrar el menu*/
-    #menu ~ .Menu-lista {
+   
+    #menu1 ~ .Articulo-contenido{
         display: none;
         overflow: hidden;
     }
     
-    #menu:checked ~ .Menu-lista{
+    #menu1:checked ~ .Articulo-contenido {
         display: block;
     }
-
     
 
   }

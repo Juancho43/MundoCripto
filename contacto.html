@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/contacto.css">
     <link rel="stylesheet" href="./assets/css/nav.css">
     
     <title>Mundo cripto</title>
@@ -23,6 +24,7 @@
             
             
             <ul class="Menu-lista" id="contenido">
+                <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/tema1.html">Bitcoin</a></li>
                 <li><a href="./pages/tema2.html">Blockchain</a></li>
                 <li><a href="./pages/tema3.html">Stablecoins</a></li>
@@ -33,17 +35,26 @@
                 <li><a href="./pages/tema8.html">DAOs</a></li>
                 <li><a href="./pages/tema9.html">NFTs</a></li>
                 <li><a href="./pages/tema10.html">WEB 3.0</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+                
             </ul>
         </nav>
         <section class="Contenido">
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odit molestias, deserunt eum quisquam id officiis repudiandae nihil cumque neque eos itaque commodi esse sequi pariatur atque iste dolores quibusdam.
-                Culpa vero, dignissimos dolorum vitae quos sed a ipsum at enim magnam? Officiis animi veritatis enim tenetur! Quibusdam fugiat at exercitationem nisi, repudiandae dolore! Quis totam assumenda ab exercitationem obcaecati.</p>    
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam porro, nihil maxime, aut enim iste quo hic ex eius tempore, sit sunt magni laudantium nobis tempora ad iusto laborum adipisci!</p>
-             
-                <img src="assets/img/ether1.gif" alt="">
-                <img src="assets/img/bitcoin-img.svg" alt="">
+            <article class="Articulo">
+                <span class="Articulo-header">
+                    <h2>Contacto</h2>
+                    <img src="./assets/img/mail.svg" alt="mail-img">
+                </span>
+                <form>
+                    <fieldset>
+                        <label for="email">Ingrese su dirección de mail:</label>
+                        <input type="email" name="email" required>
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" name="asunto">
+                        <label for="texto">Mensaje:</label>
+                        <textarea name="texto" cols="30" rows="10" required></textarea>
+                        <input type="submit" value="Enviar">
+                    </fieldset>
+                </form>
             </article>
         </section>
     </main>
