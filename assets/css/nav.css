@@ -1,12 +1,13 @@
 
 /*Clases del Nav*/
 .Volver{
+    user-select: none;
     display: none;
     background-color: #1A7EF7;
     border-radius: 50%;
     position: fixed;
     top: 86%;
-    left: 80%;
+    left: 76%;
     width: 60px;
     height: 60px;
     
@@ -19,6 +20,7 @@
     text-decoration: none;
 }
 .Menu{
+    user-select: none;
     padding: 1em;
     line-height: 2rem;
     background-color: rgb(56, 56, 56);
@@ -71,7 +73,17 @@
     .Volver{
         display: flex;
     }
-    
+    .Volver p{
+        font-size: small;
+
+    }
+    .Menu{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
     .Menu-header > h3{
         display: none;
     }

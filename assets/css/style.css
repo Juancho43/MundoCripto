@@ -4,15 +4,19 @@
     margin: 0;
     padding: 0;
 }
+*::selection{
+    background-color: rgba(212, 212, 212,30%);
+    color:#F7931A;
+}
 html{
     scroll-behavior: smooth;
 }
 body{
     height: 100vh;
     width: 100vw;
-    
 }
 header,footer{
+    user-select: none;
     background-color: rgb(102, 101, 101);
     height: 5%;
     display: flex;
@@ -47,89 +51,6 @@ section > article{
     
 }
 
-/*Contenido de la página */
-.Contenido{
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    padding: 3em;
-    line-height: 1.2rem;
-    overflow: auto;
-}
-
-/*Articulo*/
-
-.Articulo-menu{
-    position: sticky;
-    top: 1%;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-self: flex-start;
-    width: auto;
-    background-color: rgba(26, 126, 247,60%);
-    border-radius: 1em;
-    padding: 1em;
-}
-.Articulo-menu h3{
-    color:#fff;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400; 
-}
-.Articulo-header{
-    display: flex;
-    flex-flow: row-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-}
-.Articulo-header h2{
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.4em;
-    font-weight: 500;
-    color: #F7931A;
-    text-decoration: underline ;
-    letter-spacing: 1px;
-    
-}
-.Articulo div{
-    margin: 1em;
-    
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-.Articulo div img{
-    
-    height: 6%;
-    width: 6%;
-    margin: 1em;
-}
-
-.Articulo-menu ul{
-    list-style: none;
-}
-.Articulo-menu li a{
-    color: #fff;
-    font-size: large;
-    text-decoration: none;
-    margin: 6px;
-    font-family: 'Cabin', sans-serif;
-}
-
-.Articulo h3{
-    text-decoration: underline ;
-    text-decoration-color:#1A7EF7 ;
-    font-family: 'Cabin', sans-serif;
-    font-weight: 400;
-    margin: 20px;
-}
-.Articulo p{
-    text-indent: 1.3em;
-    line-height: 1.8;
-    font-family: 'Lato', sans-serif;
-}
 
 @media screen and (max-width: 700px) {
     body {
@@ -145,48 +66,9 @@ section > article{
         flex-direction: column;
         
     }
+  
     
-    .Articulo-menu{
-        align-self: center;
-        width: 80%;
-        top: 0;
-    }
-    .Contenido{
-        height: auto;
-        flex-direction: column;
-        font-size: 1.1rem;
-        overflow-x: hidden;
-        padding: 1em;
-        background-color: #fff;
-    }
-    section > article{
-        background-color: #fff;
-    }
-    .Articulo div img{
-        border: 5px solid #1A7EF7;
-        height: 40%;
-        width: 40%;
-        margin: 1em;
-        
-    }
-    .Menu{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        
-    }
    
-    /*Abrir y cerrar el menu*/
-   
-    #menu1 ~ .Articulo-contenido{
-        display: none;
-        overflow: hidden;
-    }
-    
-    #menu1:checked ~ .Articulo-contenido {
-        display: block;
-    }
     
 
   }

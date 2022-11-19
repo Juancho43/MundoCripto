@@ -1,0 +1,16 @@
+*{
+    background-color: none;
+}
+body{
+    height: auto;
+}
+footer,img,.Menu{
+    display: none;
+}
+section{
+    flex-direction: column;
+}
+article{
+    height: auto;
+    overflow: auto;
+}

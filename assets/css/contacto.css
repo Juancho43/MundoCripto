@@ -2,6 +2,14 @@ img{
     height: 20px;
     width: 25px;
 }
+address {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
 fieldset{
     display: flex;
     flex-direction: column;
@@ -22,20 +30,22 @@ input{
     background: none;
     font-size: larger;
     font-family: 'Cabin', sans-serif;
-
+    caret-color: #1A7EF7;
 }
+
 input:invalid{
     background-color: rgba(238, 48, 48, 0.8);
     border-bottom: 3px solid #f71a1a;
     
 
 }
-form textarea{
+textarea{
     resize: vertical;
     border: 2px solid #1A7EF7;
     padding: .5em;
     font-size: larger;
     font-family: 'Cabin', sans-serif;
+    caret-color: #1A7EF7;
 }
 input:focus, textarea:focus {
     background-color: rgba(255, 255, 255, .8);
