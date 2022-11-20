@@ -1,0 +1,100 @@
+@keyframes texto1 {
+    0%{
+        color: #fff;
+        font-size: 100px;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        width: auto;
+    }
+    20%{
+        width: 100%;
+    }
+    40%{
+        color:#1A7EF7;
+    }
+    50%{
+        color: #000000;
+    }
+    60%{
+        width: 100%;
+        font-size: 60px;
+        color: #F7931A;  
+        text-decoration: none;
+    }
+    80%{
+        width: 100%;
+    }
+
+    100%{
+        width: auto;
+        font-family: 'Lato', sans-serif;
+        font-size: 100px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@keyframes main1 {
+    0%{
+        background-position: 0% 50%;
+    } 
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }  
+}
+
+
+a{
+    color: #fff;
+    text-decoration: none;  
+}
+a.texto{
+    color: #fff;
+    text-shadow: 3px 3px 5px #f7931a;
+}
+a.texto:hover{
+    color: #F7931A;
+}
+main{
+    background: linear-gradient(217deg, rgba(247,147,26,1) 23%, rgba(26,126,247,1) 69%);
+    background-size: 250%;
+    width: 100%;
+    display: flex;   
+    flex-direction: column;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    animation-timing-function: ease;
+    animation-name: main1;
+    animation-duration: 9s;
+    animation-iteration-count: 1;
+}
+.texto{
+    user-select: none;
+    box-sizing: content-box;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 100px;
+    font-family: 'Lato', sans-serif;
+    animation-name: texto1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transition: 1.4s;
+}
+.texto::before{
+    content: "#";
+    color:#d4d4d4;
+}
+
+@media screen and (max-width: 700px) {
+    main{
+        height: calc(100vh - 6em);
+    }
+    .texto{
+        font-size: 2em;
+    }
+}

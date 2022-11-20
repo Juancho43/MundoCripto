@@ -1,12 +1,10 @@
-
 .Contenido{
     display: flex;
     align-items: center;
     gap: 1em;
     padding: 3em;
     line-height: 1.2rem;
-    overflow: auto;
-    
+    overflow: auto;    
 }
 .Articulo{
     box-sizing: border-box;
@@ -31,7 +29,7 @@
     font-weight: 400; 
 }
 .Articulo-menu ul{
-list-style: none;
+    list-style: none;
 }
 .Articulo-menu li a{
     color: #fff;
@@ -83,10 +81,17 @@ list-style: none;
     background-color: #1A7EF7;
     border-radius: 5px;
 }
-.Articulo p,a{
+.Articulo p,a,caption{
     text-indent: 1.3em;
     line-height: 1.8;
     font-family: 'Lato', sans-serif;
+}
+.Articulo li{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+}
+.Articulo b{
+    color: #F7931A;
 }
 .Articulo a{
     color: #1A7EF7;
@@ -100,6 +105,35 @@ list-style: none;
 .Articulo a:visited{
     color: #023f88;    
 }
+.Articulo table{
+    margin: 1em;
+    width: 90%;
+    align-self: center;
+    border: 2px solid #F7931A;
+    
+    caption-side: bottom;
+    overflow-x: auto;
+    border-spacing: 0.5rem;
+    white-space: pre-wrap;
+}
+
+
+.Articulo table th{
+    padding: 5px;
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    background-color: rgba(26, 126, 247,20%);    
+    border-radius: 5%;
+    user-select: none;
+}
+.Articulo table td{
+    text-indent: 5px;
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    border-bottom: #023f88 1px solid ;
+}
+
 .Articulo div img{    
     height: 6%;
     width: 6%;
@@ -109,10 +143,14 @@ list-style: none;
 
 .img2{
     height: auto;
-    width: 200px;
+    width: 50px;
 }
+.img3{
+    height: auto;
+    width: 20px;
+}
+
 @media screen and (max-width: 700px) {
-      
     section > article{
         background-color: #fff;
     }
@@ -139,9 +177,7 @@ list-style: none;
     #menu1 ~ .Articulo-contenido{
         display: none;
         overflow: hidden;
-     
     }
-    
     #menu1:checked ~ .Articulo-contenido {
         display: block;
     }
@@ -172,5 +208,9 @@ list-style: none;
         padding: 16px;
         margin: 0;       
     }
-    
+    .Articulo div img{    
+        display: none;
+    }
+   
+  
 }

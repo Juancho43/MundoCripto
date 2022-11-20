@@ -1,23 +1,33 @@
+h1 a{
+    color: #F7931A;
+    text-decoration: none;
+}
+h1 a::before{
+    content: "#";
+    color:#d4d4d4;
+}
 
 /*Clases del Nav*/
 .Volver{
     user-select: none;
-    display: none;
-    background-color: #1A7EF7;
-    border-radius: 50%;
     position: fixed;
     top: 86%;
     left: 76%;
+    display: none;
+    box-sizing: border-box;
     width: 60px;
     height: 60px;
-    
+    background-color: #1A7EF7;
+    border-radius: 50%;   
     justify-content: center;
     align-items: center;
 }
 .Volver a{
-    display: inline-block;
     color: white;
     text-decoration: none;
+    align-self: center;
+    text-indent: 0;
+    line-height: 0;
 }
 .Menu{
     user-select: none;
@@ -51,7 +61,6 @@
     text-decoration-color:#1A7EF7 ;
     transition: 2s;
 }
-
 
 .Menu-header{
     display: flex;

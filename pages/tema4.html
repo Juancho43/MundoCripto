@@ -7,11 +7,14 @@
     <link rel="shortcut icon" href="../assets/img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="../assets/css/articulo.css">
+    <link rel="stylesheet" href="../assets/css/print.css" media="print">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Mundo cripto - Ethereum</title>
 </head>
 <body>
     <header>
-        <h1> Mundo cripto</h1>
+        <h1><a href="../index.html">Mundo cripto</a></h1>
     </header>
     <main>
         <nav class="Menu">
@@ -20,7 +23,6 @@
                 <label for="menu"> <h3>Menú</h3> </label>
             </span>
             <ul class="Menu-lista">
-                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./tema1.html">Bitcoin</a></li>
                 <li><a href="./tema2.html">Blockchain</a></li>
                 <li><a href="./tema3.html">Wallets</a></li>
@@ -29,34 +31,116 @@
             </ul>
         </nav>
         <section class="Contenido">
-            <span class="Volver">
-                <a href="#arriba">Volver</a>
-            </span>
+            <div class="Volver">
+                <a href="#arriba">    
+                    <span class=" material-symbols-outlined">                        
+                        expand_less
+                    </span>
+                </a>
+            </div>
             <aside class="Articulo-menu ">
                 <input type="checkbox" name="menu1" id="menu1">
                 <label for="menu1"> <h3>Contenido</h3> </label>
                 <ul class="Articulo-contenido">
-                    <li><a href="#parte1">¿Qué es?</a></li>
-                    <li><a href="#parte2">Funcionamiento</a></li>
-                    <li><a href="#parte3">Usos</a></li>
+                    <li><a href="#parte1">¿Qué es Ethereum?</a></li>
+                    <li><a href="#parte2">¿Qué es Ethereum 2.0?</a></li>
+                    <li><a href="#parte3">Smart Contract</a></li>
                     <li><a href="#biblografia">Biblografía</a></li>
                 </ul>
             </aside>
     
             <article class="Articulo">
                 <span class="Articulo-header">
-                    <h2>Blockchain</h2>
-                    <img src="../assets/img/blockchain.webp" alt="blockchain-img">
+                    <h2>Ethereum</h2>
+                    <img class="img3" src="../assets/img/eth.svg" alt="eth-img">
                 </span>
                 <div>
-                    <h3 id="parte1">¿Qué es una wallet?</h3>
-                  
+                    <h3 id="parte1">¿Qué es Ethereum?</h3>
+                    <p>
+                        Ethereum es una red blockchain que tiene como objetivo facilitar la creación de aplicaciones que no están administradas ni controladas por una entidad como un gobierno. En cambio, se rigen por códigos de aplicación llamados smart contracts, o contratos inteligentes.
+                    </p>
+                    <p>
+                        Podemos pensarlo como una laptop corriendo en simultáneo en miles de máquinas alrededor del mundo. Esto significa que no es controlada por una única persona o entidad.
+                    </p>
+                    <p>
+                        Ethereum es una tecnología para construir aplicaciones y organizaciones, tener activos, hacer transacciones y comunicarse sin ser controlada por una autoridad central. No hay necesidad de entregar todos sus datos personales para utilizar Ethereum, usted mantiene el control de sus propios datos y lo que se está compartiendo. Ethereum tiene su propia criptomoneda llamada Ether, que se utiliza para pagar ciertas actividades en la red de Ethereum.
+                    </p>
+                    <p>
+                        Ethereum tiene una criptomoneda nativa llamada ether (ETH). Es completamente digital, y puede enviarla a cualquier persona del mundo al instante. Ningún gobierno ni empresa controla el suministro de ETH, está descentralizado y completamente transparente. Las nuevas monedas (también comúnmente llamadas tókenes) las crean únicamente los llamados mineros y jugadores que mantienen la red.
+                        <br>
+                        Cada acción en la red Ethereum requiere una cierta cantidad de poder computacional. El coste por este poder de computación se paga en en ether. Esto significa que se necesita al menos una pequeña cantidad de ETH para usar la red.
+                    </p>
+                    <img src="../assets/img/eth1.svg" alt="Ether">
+                </div>
+                <div>
+                    <h3 id="parte2">¿Qué es Ethereum 2.0?</h3>
+                    <p>
+                        Según los propios desarrolladores de Ethereum y los expertos del ecosistema, las principales limitaciones de la red son las siguientes:
+                    </p>
+                    <ol>
+                        <li>
+                            Escalabilidad: Este concepto hace referencia a la posibilidad que tiene una red de crecer sin sacrificar su funcionalidad. La red de Ethereum puede procesar entre 12 y 15 transacciones por segundo (TPS). Veamos si este número es suficiente:
+                            Se estima que actualmente Ethereum tiene entre 7 y 50 millones de usuarios activos mes a mes.
+                            Si tomamos la proyección más grande, llegamos a la conclusión de que alrededor de 0.62% de la población mundial usa Ethereum.
+                            Ya con este bajo número, la red está experimentando congestión y altas comisiones.
+                            Esto solo va a empeorar a medida que la base de usuarios crezca. Ethereum necesita aumentar sustancialmente el número de TPS que puede procesar. 
+                        </li>
+                        <li>
+                            
+                            Sostenibilidad: Las necesidades ambientales están empujando a todas las industrias a ser más conscientes del impacto que tienen en el ambiente y las criptomonedas no son la excepción. El sistema de Proof of Work (PoW) que usa Ethereum para verificar transacciones se destaca por su seguridad y descentralización. Sin embargo, requiere el uso intensivo de energía eléctrica. Es por eso que Ethereum está buscando la forma de minimizar su impacto ambiental. 
+                        </li>
+                        <li>
+                            Seguridad: La red de Ethereum en su estado actual es muy segura y fue demostrado por sus años de buen funcionamiento. El desafío es mejorar la escalabilidad y sostenibilidad de esta blockchain sin sacrificar su seguridad actual.  
+                        </li>
+                    </ol>
+                    <p>
+                        Los desarrolladores de Ethereum idearon un plan de 3 pasos con el objetivo de crear una red más escalable, sostenible y segura. De esta forma, Ethereum podrá seguir captando nuevos usuarios sin comprometer su funcionamiento.
+                    </p>
+                    <p>
+                        <b>Fase 1: Beacon Chain.</b>
+                        Consiste en la creación de una blockchain, separada de Ethereum, que se valide a través de Proof of Stake(<a href="./tema2.html">Más info...</a>). La Beacon Chain está activa desde diciembre del 2020 y permite hacer staking de ETH. Sin embargo, todavía no es utilizada para procesar transacciones ni ejecutar contratos inteligentes. 
+                    </p>
+                    <p>
+                        <b>Fase 2: The Merge.</b>
+                        En esta etapa, se va a unir la Beacon Chain con la cadena principal de Ethereum. Después del merge, va a dejar de existir la minería de Ethereum, pasando a ser 100% PoS. Debido al tamaño de la red de Ethereum y la magnitud del cambio, este momento va a pasar a la historia como una de las actualizaciones más importantes en la industria de las criptomonedas. Esta fase estaba planeada para ejecutarse en 2021. Sin embargo, se viene postergando por razones técnicas. 
+                    </p>
+                    <p>
+                        <b>Parte 3: Shard Chains.</b>
+                        El sharding es un concepto común en informática que consiste en dividir horizontalmente una base de datos para hacerla más rápida y eficiente. Por un lado, al dividir la blockchain de Ethereum en muchas partes, se van a poder procesar más transacciones por segundo, es decir, más escalabilidad. Por otro lado, los nodos no van a tener que mantener la información de toda la cadena, sino que se van a ocupar solo de su shard. Al bajar los requerimientos para correr un nodo, la red se vuelve más descentralizada y segura. 
+                    </p>
+                </div>
+                <div>
+                    <h3 id="parte3">SmartContracts</h3>
+                    <p>
+                        El token de Ethereum <b>Ether</b>  (ETH) se puede usar como moneda digital en transacciones financieras, como inversión o como reserva de valor, mientras que Ethereum es la red blockchain en la que se mantiene e intercambia este token.
+                    </p>
+                    <p>
+                        Lo que hace único a Ethereum es que los usuarios pueden usar su red para almacenar datos y ejecutar aplicaciones descentralizadas dentro de su <b>blockchain</b> . Esto les da a los usuarios control sobre sus datos y un uso abierto de la aplicación ya que no hay una autoridad central que administre todo.
+                    </p>
+                    <p>
+                        Para entender un smart contract, primero hemos de recordar qué significa un contrato. Un contrato no es más que un acuerdo entre dos o más partes, un entorno donde se define lo que se puede hacer, cómo se puede hacer, qué pasa si algo no se hace. Es decir, unas reglas de juego que permiten a todas las partes que lo aceptan entender en qué va a consistir la interacción que van a realizar.
+                    </p>
+                    <p>
+                        Hasta ahora los contratos han sido documentos verbales o caros documentos escritos. Estos documentos están sujetos a las leyes y jurisdicciones territoriales, y en ocasiones requieren de notarios. Es decir, más costes, tiempo y terceros que intervienen en el proceso. Debido a ello, no son accesibles para cualquier persona. Y esto no es lo peor: los contenidos de los contratos pueden estar sujetos a la interpretación. ¡Agárrate!
+                    </p>
+                    <p>
+                        En cambio un contrato inteligente es capaz de ejecutarse y hacerse cumplir por sí mismo, de manera autónoma y automática, sin intermediarios ni mediadores. Evitan el lastre de la interpretación al no ser verbal o escrito en los lenguajes que hablamos. Los smart contracts se tratan de  <b>“scripts” (códigos informáticos)</b>  escritos con lenguajes de programación. Esto quiere decir que los términos del contrato son puras sentencias y comandos en el código que lo forma.
+                    </p>
+                    <p>
+                        Por otro lado, un smart contract puede ser creado y llamado por personas físicas y/o jurídicas. Pero también por máquinas u otros programas que funcionan de manera autónoma. Un <b>smart contract</b> tiene validez sin depender de autoridades. Esto se debe a su naturaleza: es un código visible por todos y que no se puede cambiar al existir sobre la tecnología blockchain. Esto le confiere un carácter descentralizado, inmutable y transparente.
+                    </p>
                 </div>
                 <div>
                     <h3 id="biblografia">Biblografía</h3>
                     <ol>
-                        <li><a href="" target="_blank">¿Qué es blockchain?</a></li>
                         
+                        <li><a href="https://ethereum.org/es/" target="_blank">Página inicial</a></li>
+                        <li><a href="https://wiki.lemon.me/ethereum-eth/" target="_blank">Ethereum (ETH)</a></li>
+                        <li><a href="https://wiki.lemon.me/que-es-eth-2-0/" target="_blank">¿Qué es ETH 2.0? </a></li>
+                        <li><a href="https://wiki.lemon.me/ethereum-eth-que-es-y-como-comprarla-en-lemon-cash/" target="_blank">¿Ethereum (ETH): ¿Qué es y cómo comprarla en Lemon Cash? </a></li>
+                        <li><a href="https://academy.bit2me.com/que-son-los-smart-contracts/#%C2%BFQue_es_un_smart_contract" target="_blank">Smart Contracts: ¿Qué son, cómo funcionan y qué aportan? </a></li>
+                        <li><a href="https://academy.bit2me.com/que-son-los-smart-contracts/#%C2%BFQue_es_un_smart_contract" target="_blank">Smart Contracts: ¿Qué son, cómo funcionan y qué aportan? </a></li>
+
                     </ol>
                 </div>
             </article>

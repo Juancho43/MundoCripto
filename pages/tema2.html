@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/articulo.css">
     <link rel="stylesheet" href="../assets/css/print.css" media="print">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Mundo cripto - BlockChain</title>
+    
 </head>
 <body>
     <header>
-        <h1> Mundo cripto</h1>
+        <h1><a href="../index.html">Mundo cripto</a></h1>
     </header>
     <main>
         <nav class="Menu">
@@ -22,7 +24,6 @@
                 <label for="menu"> <h3>Menú</h3> </label>
             </span>
             <ul class="Menu-lista">
-                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./tema1.html">Bitcoin</a></li>
                 <li><a href="./tema2.html">Blockchain</a></li>
                 <li><a href="./tema3.html">Wallets</a></li>
@@ -31,9 +32,13 @@
             </ul>
         </nav>
         <section class="Contenido">
-            <span class="Volver">
-                <a href="#arriba">Volver</a>
-            </span>
+            <div class="Volver">
+                <a href="#arriba">    
+                    <span class=" material-symbols-outlined">                        
+                        expand_less
+                    </span>
+                </a>
+            </div>
             <aside class="Articulo-menu ">
                 <input type="checkbox" name="menu1" id="menu1">
                 <label for="menu1"> <h3>Contenido</h3> </label>
@@ -97,7 +102,6 @@
                     <p>
                         Ese libro de cuentas no solo está distribuido y es seguro: los bloques enlazados (de ahí lo de cadena de bloques) cuentan con un puntero hash (codificado) que enlaza al bloque anterior, además de una marca de tiempo y los datos de la transacción, y esa información es pública. ¿Qué significa eso? Que la cadena de bloques, aunque protege la privacidad de sus usuarios, sí que permite controlar la trazabilidad de esas transacciones.
                     </p>
-                    <img src="../assets/img/tema2-1.jpg" alt="blockchain example">
                 </div>
                 <div>
                     <h3 id="parte3">Funcionamiento</h3>

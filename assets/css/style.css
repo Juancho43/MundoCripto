@@ -5,7 +5,7 @@
     padding: 0;
 }
 *::selection{
-    background-color: rgba(212, 212, 212,30%);
+    background-color: rgba(212, 212, 212, 0.302);
     color:#F7931A;
 }
 html{
@@ -23,7 +23,6 @@ header,footer{
     justify-content: center;
     align-items: center;
 }
-
 footer{
     font-size: medium;
 }
@@ -33,24 +32,17 @@ header h1{
     font-weight: 500;
     color: #F7931A;
 }
-header h1 a{
-    color: #F7931A;
-    text-decoration: none;
-}
 main{
     display: flex;   
     width: 100%;
     height: 90%;
 }
 section > article{
-   
     border-radius: 2%;
     background-color: rgba(212, 212, 212,30%);
     padding: 1em;
-    align-self: flex-start;
-    
+    align-self: flex-start;    
 }
-
 
 @media screen and (max-width: 700px) {
     body {
@@ -66,9 +58,4 @@ section > article{
         flex-direction: column;
         
     }
-  
-    
-   
-    
-
-  }
+}
