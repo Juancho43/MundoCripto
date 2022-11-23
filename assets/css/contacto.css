@@ -61,9 +61,13 @@ input[type=submit]:hover {
     box-shadow: #1A7EF7 2px 3px 50px;
 }
 .Articulo{
-    width: 90vw;   
+    width: 90vw; 
+    display: flex;  
+    flex-flow: column wrap;
 }
-
+.Inicio{
+    text-align: center;
+}
 @media screen and (max-width: 700px) {
     input{
         padding: .2em;
